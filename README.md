@@ -30,3 +30,7 @@ Same as above, but instead of "Name Request" do "Bug Report"
 ### How do I tip?
 
 No need. I made this in my free time.
+
+### Please...?
+
+Fine, press the sponsor button and then my "BuyMeACoffee" link.
