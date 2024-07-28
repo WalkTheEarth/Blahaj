@@ -14,4 +14,19 @@
 
 ### How do I add/suggest names?
 
-[under work]
+Go to [issues](https://github.com/WalkTheEarth/Blahaj/issues), then click "New Report" (or similar) then look for "Name Request", press the green button next to it, and fill out the form.
+
+### How do I report bugs?
+
+Same as above, but instead of "Name Request" do "Bug Report" 
+
+### How do I host?
+
+1. Clone the repo.
+2. run `cd Blahaj`
+3. then run whatever http server command you use. (Like `python3 -m http.server`)
+4. (if using the command i supplied you with) Go to "localhost:8000`
+
+### How do I tip?
+
+No need. I made this in my free time.
