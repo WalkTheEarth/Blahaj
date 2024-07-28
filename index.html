@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blahaj Name Chooser! 🦈</title>
+</head>
+<body>
+    <h1>Blahaj Name Chooser! 🦈</title>
+    
+    <div id="nameDisplay">Loading... (if it hangs on this page for a while, refresh or check internet)</div>
+    
+    <script>
+        // Function to fetch and display a random name
+        function chooseRandomName() {
+            // Create a new XMLHttpRequest object
+            var xhr = new XMLHttpRequest();
+            
+            // Open the request to the text file
+            xhr.open('GET', 'names.txt', true);
+            
+            // Handle the response once it's loaded
+            xhr.onload = function() {
+                if (xhr.status === 200) {
+                    // Parse the response text into an array of lines
+                    var lines = xhr.responseText.split('\n');
+                    
+                    // Choose a random line
+                    var randomIndex = Math.floor(Math.random() * lines.length);
+                    var chosenName = lines[randomIndex].trim();
+                    
+                    // Update the name display
+                    document.getElementById('nameDisplay').textContent = chosenName;
+                } else {
+                    document.getElementById('nameDisplay').textContent = "Error loading names.";
+                }
+            };
+            
+            // Send the request
+            xhr.send();
+        }
+        
+        // Call the function to choose and display a random name
+        chooseRandomName();
+    </script>
+</body>
+</html>
